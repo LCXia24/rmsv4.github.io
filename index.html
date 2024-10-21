@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt Management</title>
+    <link rel="icon" href="RMS.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dexie/3.2.0/dexie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+</head>
+<body>
+    <h1>Receipt Management System</h1>
+    <div>
+        <input type="date" id="date" required>
+        <input type="text" id="particulars" placeholder="Particulars" required>
+        <input type="text" id="address" placeholder="Address" required>
+        <input type="text" id="tin_no" placeholder="TIN No" required>
+        <input type="text" id="Receipt_Number" placeholder="Receipt Number" required>
+        <input type="number" id="invoice_amount" placeholder="Invoice Amount" required>
+        <br>
+        <select id="vat_status" required>
+            <option value="VAT Registered">VAT Registered</option>
+            <option value="Not VAT Registered">Not VAT Registered</option>
+        </select>
+        <br>
+        <button id="add_invoice">Add Invoice</button>
+        <button id="clear_data">Clear</button> <!-- New Clear Button -->
+    </div>
+    <hr>
+    <div>
+        <input type="text" id="search" placeholder="Search by Particulars">
+        <button id="search_button">Search</button>
+    </div>
+    <div id="invoice_list"></div>
+    <button id="save_xlsx">Save to Excel</button>
+    <hr>
+    <a href="about.html">
+    <button>About this System</button>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

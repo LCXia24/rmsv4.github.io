@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+input, select, button {
+    margin: 5px;
+    padding: 10px;
+}
+
+#invoice_list {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#invoice_list div {
+    border-bottom: 1px solid #eee;
+    padding: 5px 0;
+}
